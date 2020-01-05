@@ -17,7 +17,7 @@
    ```
    <header>、<footer>、<section>、<aside>、<nav>、<article>、<hgroup>、<figure>
    ```
-   **废除一些网页美化方面的标签，是央视与结构分离更加彻底**  
+   **废除一些网页美化方面的标签，使样式与结构分离更加彻底**  
    ```
    <big>、<u>、<font>、<basefont>、<center>、<s>、<tt>
    ```
@@ -60,7 +60,7 @@
 4. **存储方面**  
    - 新增WebStorage，包括localStorage、sessionStorage  
    - 引入了IndexDB和Web SQL，允许在浏览器端创建数据库并存储数据，两者的区别在于IndexDB更像是一个NoSQL数据库，而WebSQL更像是关系型数据库。W3C已经不再支持WebSQL。
-   - 引入了应用程序缓存器(application cache)，科迪Web进行缓存，在没有网络的情况下使用，通过创建cache mainfest文件创建应用缓存，为PWA提供了底层的技术支持。
+   - 引入了应用程序缓存器(application cache)，可对Web进行缓存，在没有网络的情况下使用，通过创建cache mainfest文件创建应用缓存，为PWA提供了底层的技术支持。
 ## 二、meta标签属性都有哪些？
    **charset属性**  
    ```
@@ -138,7 +138,7 @@
 ## 五、DOM篇
    ### 什么是DOM？
    ```
-   MDN：文档对象模型（DOM）是HTML和XML文档的变成接口。它提供了对文档的结构化描述，并定义了一种方式可以使从程序中对该结构进行访问，从而改变文档的就够、样式和内容。DOM将文档解析为一个由节点和对象（包含属性和方法的对象）组成的结构集合。简言之，它会将web页面和脚本或者程序语言连接起来。
+   MDN：文档对象模型（DOM）是HTML和XML文档的编程接口。它提供了对文档的结构化描述，并定义了一种方式可以使从程序中对该结构进行访问，从而改变文档的结构、样式和内容。DOM将文档解析为一个由节点和对象（包含属性和方法的对象）组成的结构集合。简言之，它会将web页面和脚本或者程序语言连接起来。
    ```
    说白了DOM就是浏览器为JavaScript提供的一系列接口去操作web页面。
    
@@ -184,7 +184,7 @@
 
    // 当前元素的第一个 / 最后一个子元素节点
    var el = ele.firstElementChild
-   var el = ele.lastChildElement
+   var el = ele.lastElementChild
 
    // 上一个 / 下一个兄弟元素节点
    var el = ele.previousElementsibling
